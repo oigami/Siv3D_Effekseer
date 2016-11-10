@@ -1,0 +1,626 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Siv3D_Effekseer Log</title>
+<style>
+body		{ background-color: #18202A; font-family: 'Segoe UI','メイリオ','Meiryo','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Osaka','ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif; }
+h2			{ color: #FFEEDD; text-align: center; }
+p			{ margin: 0px 12% 0px; padding: 5px 20px 5px; font-size: 14px; }
+p.error		{ background: #F03000; color: #000011; }
+p.fail		{ background: #E08000; color: #001122; }
+p.warning	{ background: #D0D020; color: #001133; }
+p.script	{ background: #106060; color: #FFEEFF; }
+p.app		{ background: #202A2A; color: #FFEEDD; }
+p.info		{ background: #000A0A; color: #FFEEDD; }
+p.debug		{ background: #001F2F; color: #FFEEDD; }
+p.c0	{ color: #FFEEDD; text-align: center; font-size: 20px; }
+p.c1	{ color: #FFEEDD; text-align: center; font-size: 12px; }
+p.c2	{ color: #AA9988; text-align: center; font-size: 9px; }
+</style>
+</head>
+<body>
+<h2>Siv3D_Effekseer Log</h2>
+<p class="info">アプリケーションを開始します。</p>
+<p class="info">2016/11/10 22:57:49</p>
+<p class="info">エンジンを初期化します。</p>
+<p class="info">Siv3D Engine version August 2016 v2 (x64)</p>
+<p class="info">SSE3/SSE4.1/SSE4.2 をサポート</p>
+<p class="info">AVX をサポート</p>
+<p class="info">MP3 デコーダーは libmpg123 を使用します。</p>
+<p class="info">ウィンドウクラスを登録しました。</p>
+<p class="info">ペンタブの筆圧・傾き機能は利用できません。</p>
+<p class="info">ゲームパッドを使用できます。最大接続数: 16</p>
+<p class="info">XInput コントローラーを使用できます。</p>
+<p class="info">マルチタッチには対応していません。</p>
+<p class="info">Kinect v1 は使用できません。</p>
+<p class="info">Kinect v2 は使用できません。</p>
+<p class="info">xaudio2_8.dll をロードしました。</p>
+<p class="info">d3d11.dll をロードしました。</p>
+<p class="info">グラフィックスアダプター:</p>
+<p class="info">[0] Intel(R) HD Graphics 3000 (VRAM: 32MiB, System: 0B, Shared: 1.59GiB)</p>
+<p class="info">[1] Microsoft Basic Render Driver (VRAM: 0B, System: 0B, Shared: 7.96GiB)</p>
+<p class="info">デフォルトのグラフィックスアダプターのグラフィックスデバイスを作成します。</p>
+<p class="info">Direct3D 11 driver type: Hardware (feature level: 10_1)</p>
+<p class="info">使用するグラフィックスアダプター: Intel(R) HD Graphics 3000</p>
+<p class="info">d3dcompiler_47.dll をロードしました。</p>
+<p class="info">エンジンの初期化が完了しました。</p>
+<p class="info">メインスレッドを開始しました。</p>
+<hr width="76%">
+<p class="info">System::Update() : ExitEvent CloseButton</p>
+<hr width="76%">
+<p class="info">メインスレッドを終了しました。</p>
+<p class="info">ウィンドウメッセージの終了を待機中です。</p>
+<p class="info">ウィンドウ表示を終了しました。</p>
+<p class="info">ウィンドウクラスの登録を解除しました。</p>
+<p class="info">エンジンを終了しました。</p>
+<p class="info">2016/11/10 22:57:59</p>
+
+<br>
+<p class="c0">Siv3D Engine August 2016 v2 (x64)</p>
+<p class="c1">Copyright (c) 2008-2016 Ryo Suzuki</p>
+<p class="c1">Copyright (c) 2011-2013 Waseda Computer Entertainment</p>
+<br>
+<p class="c0">HamFramework</p>
+<p class="c1">Copyright (c) 2014-2016 Hamukun</p>
+<p class="c1">Copyright (c) 2014-2016 Ryo Suzuki</p>
+<br>
+<p class="c0">C++ Format</p>
+<p class="c1">Copyright (c) 2012-2015, Victor Zverovich</p>
+<p class="c2">
+ Redistribution and use in source and binary forms, with or without<br>
+ modification, are permitted provided that the following conditions are met:<br>
+<br>
+ 1. Redistributions of source code must retain the above copyright notice, this<br>
+    list of conditions and the following disclaimer.<br>
+ 2. Redistributions in binary form must reproduce the above copyright notice,<br>
+    this list of conditions and the following disclaimer in the documentation<br>
+    and/or other materials provided with the distribution.<br>
+<br>
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND<br>
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED<br>
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE<br>
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR<br>
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES<br>
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;<br>
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND<br>
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS<br>
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<p class="c0">libpng version 1.6.24 - August 4, 2016</p>
+<p class="c1">Copyright (c) 1998-2002,2004,2006-2016 Glenn Randers-Pehrson</p>
+<p class="c1">Copyright (c) 1996-1997 Andreas Dilger</p>
+<p class="c1">Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.</p>
+<br>
+<p class="c0">zlib version 1.2.8, April 28, 2013</p>
+<p class="c1">Copyright (c) 1995-2013 Jean-loup Gailly and Mark Adler</p>
+<br>
+<p class="c0">libjpeg</p>
+<p class="c1">Copyright (c) 1994-2011, Thomas G. Lane, Guido Vollbeding.</p>
+<p class="c2">
+this software is based in part on the work of the Independent JPEG Group
+</p>
+<br>
+<p class="c0">libjpeg-turbo version 1.4.2</p>
+<p class="c1">Copyright (c) 2009-2015 D. R. Commander. All Rights Reserved.</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright notice,<br>
+  this list of conditions and the following disclaimer.<br>
+- Redistributions in binary form must reproduce the above copyright notice,<br>
+  this list of conditions and the following disclaimer in the documentation<br>
+  and/or other materials provided with the distribution.<br>
+- Neither the name of the libjpeg-turbo Project nor the names of its<br>
+  contributors may be used to endorse or promote products derived from this<br>
+  software without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS",<br>
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE<br>
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE<br>
+ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE<br>
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR<br>
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF<br>
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS<br>
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN<br>
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)<br>
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE<br>
+POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">OpenJPEG version 1.5.2</p>
+<p class="c1">Copyright (c) 2002-2012, Communications and Remote Sensing Laboratory,<br>Universite catholique de Louvain (UCL), Belgium</p>
+<p class="c1">Copyright (c) 2002-2012, Professor Benoit Macq</p>
+<p class="c1">Copyright (c) 2003-2012, Antonin Descampe</p>
+<p class="c1">Copyright (c) 2003-2009, Francois-Olivier Devaux</p>
+<p class="c1">Copyright (c) 2005, Herve Drolon, FreeImage Team</p>
+<p class="c1">Copyright (c) 2002-2003, Yannick Verschueren</p>
+<p class="c1">Copyright (c) 2001-2003, David Janssens</p>
+<p class="c1">All rights reserved.</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+1. Redistributions of source code must retain the above copyright<br>
+   notice, this list of conditions and the following disclaimer.<br>
+2. Redistributions in binary form must reproduce the above copyright<br>
+   notice, this list of conditions and the following disclaimer in the<br>
+   documentation and/or other materials provided with the distribution.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS `AS IS'<br>
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE<br>
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE<br>
+ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE<br>
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR<br>
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF<br>
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS<br>
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN<br>
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)<br>
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE<br>
+POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">libwebp version 0.5.0, December 23, 2015</p>
+<p class="c1">Copyright (c) 2010, Google Inc. All rights reserved.</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+  * Redistributions of source code must retain the above copyright<br>
+    notice, this list of conditions and the following disclaimer.<br>
+<br>
+  * Redistributions in binary form must reproduce the above copyright<br>
+    notice, this list of conditions and the following disclaimer in<br>
+    the documentation and/or other materials provided with the distribution.<br>
+<br>
+  * Neither the name of Google nor the names of its contributors may<br>
+    be used to endorse or promote products derived from this software<br>
+    without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT<br>
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,<br>
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY<br>
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE<br>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">LibTIFF version 4.0.6</p>
+<p class="c1">Copyright (c) 1988-1997 Sam Leffler</p>
+<p class="c1">Copyright (c) 1991-1997 Silicon Graphics, Inc.</p>
+<p class="c2">
+Permission to use, copy, modify, distribute, and sell this software and<br>
+its documentation for any purpose is hereby granted without fee, provided<br>
+that (i) the above copyright notices and this permission notice appear in<br>
+all copies of the software and related documentation, and (ii) the names of<br>
+Sam Leffler and Silicon Graphics may not be used in any advertising or<br>
+publicity relating to the software without the specific, prior written<br>
+permission of Sam Leffler and Silicon Graphics.<br>
+<br>
+THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND,<br>
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY<br>
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. <br>
+<br>
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR<br>
+ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,<br>
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,<br>
+WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF <br>
+LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE <br>
+OF THIS SOFTWARE.<br>
+</p>
+<br>
+<p class="c0">libmpg123 version 1.22.0</p>
+<p class="c1">Copyright (c) 1995-2013 by Michael Hipp and others</p>
+<p class="c2">free software under the terms of the LGPL v2.1</p>
+<br>
+<p class="c0">libogg version 1.3.2</p>
+<p class="c1">Copyright (c) 2002, Xiph.org Foundation</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+notice, this list of conditions and the following disclaimer.<br>
+<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+notice, this list of conditions and the following disclaimer in the<br>
+documentation and/or other materials provided with the distribution.<br>
+<br>
+- Neither the name of the Xiph.org Foundation nor the names of its<br>
+contributors may be used to endorse or promote products derived from<br>
+this software without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION<br>
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,<br>
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY<br>
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE<br>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">libvorbis version 1.3.5</p>
+<p class="c1">Copyright (c) 2002-2008 Xiph.org Foundation</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+notice, this list of conditions and the following disclaimer.<br>
+<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+notice, this list of conditions and the following disclaimer in the<br>
+documentation and/or other materials provided with the distribution.<br>
+<br>
+- Neither the name of the Xiph.org Foundation nor the names of its<br>
+contributors may be used to endorse or promote products derived from<br>
+this software without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION<br>
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,<br>
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY<br>
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE<br>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">OpenCV version 3.0.0</p>
+<p class="c1">Copyright (c) 2000-2015, Intel Corporation, all rights reserved.</p>
+<p class="c1">Copyright (c) 2009-2011, Willow Garage Inc., all rights reserved.</p>
+<p class="c1">Copyright (c) 2009-2015, NVIDIA Corporation, all rights reserved.</p>
+<p class="c1">Copyright (c) 2010-2013, Advanced Micro Devices, Inc., all rights reserved.</p>
+<p class="c1">Copyright (c) 2015, OpenCV Foundation, all rights reserved.</p>
+<p class="c1">Copyright (c) 2015, Itseez Inc., all rights reserved.</p>
+<p class="c2">
+Third party copyrights are property of their respective owners.<br>
+<br>
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+notice, this list of conditions and the following disclaimer.<br>
+<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+notice, this list of conditions and the following disclaimer in the<br>
+documentation and/or other materials provided with the distribution.<br>
+<br>
+- Neither the name of the Xiph.org Foundation nor the names of its<br>
+contributors may be used to endorse or promote products derived from<br>
+this software without specific prior written permission.<br>
+<br>
+This software is provided by the copyright holders and contributors "as is" and<br>
+any express or implied warranties, including, but not limited to, the implied<br>
+warranties of merchantability and fitness for a particular purpose are disclaimed.<br>
+In no event shall copyright holders or contributors be liable for any direct,<br>
+indirect, incidental, special, exemplary, or consequential damages<br>
+(including, but not limited to, procurement of substitute goods or services;<br>
+loss of use, data, or profits; or business interruption) however caused<br>
+and on any theory of liability, whether in contract, strict liability,<br>
+or tort (including negligence or otherwise) arising in any way out of<br>
+the use of this software, even if advised of the possibility of such damage.<br>
+</p>
+<br>
+<p class="c0">Poly2Tri</p>
+<p class="c1">Copyright (c) 2009-2010, Poly2Tri Contributors</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without modification,<br>
+are permitted provided that the following conditions are met:<br>
+<br>
+* Redistributions of source code must retain the above copyright notice,<br>
+  this list of conditions and the following disclaimer.<br>
+* Redistributions in binary form must reproduce the above copyright notice,<br>
+  this list of conditions and the following disclaimer in the documentation<br>
+  and/or other materials provided with the distribution.<br>
+* Neither the name of Poly2Tri nor the names of its contributors may be<br>
+  used to endorse or promote products derived from this software without specific<br>
+  prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR<br>
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,<br>
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,<br>
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR<br>
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF<br>
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING<br>
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS<br>
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">CLX C++ Libraries</p>
+<p class="c1">Copyright (c) 2004-2008, clown. All rights reserved.</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions<br>
+are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+    notice, this list of conditions and the following disclaimer.<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+    notice, this list of conditions and the following disclaimer in the<br>
+    documentation and/or other materials provided with the distribution.<br>
+- No names of its contributors may be used to endorse or promote<br>
+    products derived from this software without specific prior written<br>
+    permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT<br>
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED<br>
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR<br>
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF<br>
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING<br>
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS<br>
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">ArUco</p>
+<p class="c1">Copyright (c) 2011 Rafael Muñoz Salinas</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without modification, are<br>
+permitted provided that the following conditions are met:<br>
+<br>
+   1. Redistributions of source code must retain the above copyright notice, this list of<br>
+      conditions and the following disclaimer.<br>
+<br>
+   2. Redistributions in binary form must reproduce the above copyright notice, this list<br>
+      of conditions and the following disclaimer in the documentation and/or other materials<br>
+      provided with the distribution.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY Rafael Muñoz Salinas ''AS IS'' AND ANY EXPRESS OR IMPLIED<br>
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND<br>
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL Rafael Muñoz Salinas OR<br>
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR<br>
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR<br>
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON<br>
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING<br>
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF<br>
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">PicoJSON</p>
+<p class="c1">Copyright (c) 2009-2010 Cybozu Labs, Inc.</p>
+<p class="c1">Copyright (c) 2011-2015 Kazuho Oku</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+1. Redistributions of source code must retain the above copyright notice,<br>
+   this list of conditions and the following disclaimer.<br>
+<br>
+2. Redistributions in binary form must reproduce the above copyright notice,<br>
+   this list of conditions and the following disclaimer in the documentation<br>
+   and/or other materials provided with the distribution.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"<br>
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE<br>
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE<br>
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE<br>
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR<br>
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF<br>
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS<br>
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN<br>
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)<br>
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE<br>
+POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+
+<br>
+<p class="c0">miniz</p>
+<p class="c1">Copyright (c) 2013-2014 RAD Game Tools and Valve Software</p>
+<p class="c1">Copyright (c) 2010-2014 Rich Geldreich and Tenacious Software LLC</p>
+<p class="c2">
+Permission is hereby granted, free of charge, to any person obtaining a copy<br>
+of this software and associated documentation files (the "Software"), to deal<br>
+in the Software without restriction, including without limitation the rights<br>
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>
+copies of the Software, and to permit persons to whom the Software is<br>
+furnished to do so, subject to the following conditions:<br>
+<br>
+The above copyright notice and this permission notice shall be included in<br>
+all copies or substantial portions of the Software.<br>
+<br>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br>
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br>
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br>
+THE SOFTWARE.<br>
+</p>
+<br>
+<p class="c0">quirc</p>
+<p class="c1">Copyright (c) 2010-2012 Daniel Beer</p>
+<p class="c2">
+Permission to use, copy, modify, and/or distribute this software for any<br>
+purpose with or without fee is hereby granted, provided that the above<br>
+copyright notice and this permission notice appear in all copies.<br>
+<br>
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES<br>
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF<br>
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR<br>
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES<br>
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN<br>
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF<br>
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.<br>
+</p>
+<br>
+<p class="c0">Lepton</p>
+<p class="c1">Copyright (c) 2009-2013 Stanford University and Peter Eastman</p>
+<p class="c2">
+Permission is hereby granted, free of charge, to any person obtaining a<br>
+copy of this software and associated documentation files (the "Software"),<br>
+to deal in the Software without restriction, including without limitation<br>
+the rights to use, copy, modify, merge, publish, distribute, sublicense,<br>
+and/or sell copies of the Software, and to permit persons to whom the<br>
+Software is furnished to do so, subject to the following conditions:<br>
+<br> 
+The above copyright notice and this permission notice shall be included in<br>
+all copies or substantial portions of the Software.<br>
+<br>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL<br>
+THE AUTHORS, CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,<br>
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR<br>
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE<br>
+USE OR OTHER DEALINGS IN THE SOFTWARE.<br>
+</p><br>
+<p class="c0">Opus</p>
+<p class="c1">Copyright 2001-2011 Xiph.Org, Skype Limited, Octasic,</p>
+<p class="c1">Jean-Marc Valin, Timothy B. Terriberry,</p>
+<p class="c1">CSIRO, Gregory Maxwell, Mark Borgerding,</p>
+<p class="c1">Erik de Castro Lopo</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions<br>
+are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+notice, this list of conditions and the following disclaimer.<br>
+<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+notice, this list of conditions and the following disclaimer in the<br>
+documentation and/or other materials provided with the distribution.<br>
+<br>
+- Neither the name of Internet Society, IETF or IETF Trust, nor the<br>
+names of specific contributors, may be used to endorse or promote<br>
+products derived from this software without specific prior written<br>
+permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER<br>
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,<br>
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,<br>
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR<br>
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF<br>
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING<br>
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS<br>
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+<br>
+Opus is subject to the royalty-free patent licenses which are<br>
+specified at:<br>
+<br>
+Xiph.Org Foundation:<br>
+https://datatracker.ietf.org/ipr/1524/ <br>
+<br>
+Microsoft Corporation:<br>
+https://datatracker.ietf.org/ipr/1914/ <br>
+<br>
+Broadcom Corporation:<br>
+https://datatracker.ietf.org/ipr/1526/ <br>
+</p>
+<br>
+<p class="c0">libopusfile</p>
+<p class="c1">Copyright (c) 1994-2013 Xiph.Org Foundation and contributors</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions<br>
+are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+notice, this list of conditions and the following disclaimer.<br>
+<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+notice, this list of conditions and the following disclaimer in the<br>
+documentation and/or other materials provided with the distribution.<br>
+<br>
+- Neither the name of the Xiph.Org Foundation nor the names of its<br>
+contributors may be used to endorse or promote products derived from<br>
+this software without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION<br>
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,<br>
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY<br>
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE<br>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">Zinnia</p>
+<p class="c1">Copyright (c) 2005-2007, Taku Kudo</p>
+<p class="c2">
+Redistribution and use in source and binary forms, with or without modification, are<br>
+permitted provided that the following conditions are met:<br>
+<br>
+ * Redistributions of source code must retain the above<br>
+   copyright notice, this list of conditions and the<br>
+   following disclaimer.<br>
+<br>
+    * Redistributions in binary form must reproduce the above<br>
+   copyright notice, this list of conditions and the<br>
+   following disclaimer in the documentation and/or other<br>
+   materials provided with the distribution.<br>
+<br>
+    * Neither the name of Taku Kudo nor the names of its contributors<br>
+   may be used to endorse or promote products derived from this software<br>
+   without specific prior written permission.<br>
+<br>
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED<br>
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A<br>
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR<br>
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS<br>
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR<br>
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF<br>
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="c0">PolyPartition Library version r7</p>
+<p class="c1">Copyright (c) 2011 by Ivan Fratric</p>
+<br>
+<p class="c0">Box2D 2.3.2</p>
+<p class="c1">Copyright (c) 2006-2013 Erin Catto</p>
+<br>
+<p class="c0">DirectX Mesh Geometry Library</p>
+<p class="c1">Copyright (c) Microsoft Corporation. All rights reserved.</p>
+<br>
+<p class="c0">tinyobjloader</p>
+<p class="c1">Copyright (c) 2012-2013, Syoyo Fujita</p>
+<p class="c2">Licensed under 2-clause BSD liecense.</p>
+<br>
+<p class="c0">qrencode</p>
+<p class="c1">Copyright (c) 2006-2012 Kentaro Fukuchi</p>
+<p class="c2">free software under the terms of the LGPL v2.1</p>
+<br>
+<p class="c0">SoundTouch Library version 1.9.2</p>
+<p class="c1">Copyright (c) 2001-2015, Olli Parviainen</p>
+<p class="c2">free software under the terms of the LGPL v2.1</p>
+<br>
+<p class="c0">XDSP</p>
+<p class="c1">Copyright (c) Microsoft Corporation. All rights reserved.</p>
+<br>
+<p class="c0">par_shapes</p>
+<p class="c1">Copyright (c) 2015 Philip Rideout</p>
+<br>
+<p class="c0">Convenient Constructs For Stepping Through a Range of Values</p>
+<p class="c1">Copyright (c) Mikhail Semenov</p>
+<p class="c2">Licenced with the Code Project Open Licence (CPOL) http://www.codeproject.com/info/cpol10.aspx </p>
+<br>
+</body>
+</html>
